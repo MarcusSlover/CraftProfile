@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+    implementation("com.google.code.gson:gson:2.9.0")
     testImplementation(kotlin("test"))
 }
 
@@ -25,5 +26,5 @@ tasks.withType<KotlinCompile> {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("com.marcusslover.craftprofile.CraftProfileApplication.kt")
 }

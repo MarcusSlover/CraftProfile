@@ -1,12 +1,11 @@
 package com.marcusslover.craftprofile.window
 
-import java.awt.Dimension
-import javax.swing.WindowConstants.EXIT_ON_CLOSE
+import com.marcusslover.craftprofile.window.main.MainFrame
 
 class WindowHandler {
-    private val mainWindow = MainWindow()
+    private val mainFrame = MainFrame()
 
     fun start() {
-        mainWindow.isVisible = true
+        mainFrame.isVisible = true
     }
 }

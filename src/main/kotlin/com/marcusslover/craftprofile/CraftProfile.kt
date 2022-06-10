@@ -1,8 +1,9 @@
 package com.marcusslover.craftprofile
 
-import com.marcusslover.craftprofile.manager.ProfileManager
 import com.marcusslover.craftprofile.access.ProfileAccessor
+import com.marcusslover.craftprofile.manager.ProfileManager
 import com.marcusslover.craftprofile.window.WindowHandler
+import javax.swing.SwingUtilities
 
 class CraftProfile {
     private val profileAccessor = ProfileAccessor()
@@ -10,7 +11,10 @@ class CraftProfile {
     private val windowHandler = WindowHandler()
 
     init {
-        windowHandler.start()
+        SwingUtilities.invokeLater {
+            windowHandler.start()
+        }
+
     }
 
 }

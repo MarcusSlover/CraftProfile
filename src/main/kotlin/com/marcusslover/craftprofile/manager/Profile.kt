@@ -12,6 +12,4 @@ data class Profile(
     val lastVersionId: String,
     val name: String,
     val type: String
-) {
-
-}
+)
